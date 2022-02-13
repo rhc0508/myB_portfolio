@@ -1,0 +1,53 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/4c14ad6ba0.js" crossorigin="anonymous"></script>
+
+<div class="h_top">
+    <div class="frame">
+        <div class="logo">
+            <a href="./"><img src="./img/mybLogo_outline.png" alt=""></a>
+        </div>
+        <div class="search">
+            <input type="text">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="right">
+            <div class="info">
+                <ul>
+                    <li class="register"><a href="./register_form.php"><i class="fas fa-user"></i></a></li>
+                    <li class="login"><a href="./login_form.php"><i style="font-size: 24px;" class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <!-- <li class="logout"><a href=""><ion-icon name="exit-outline"></ion-icon></a></li> -->
+                    <li class="cart"><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+                    <!-- <li class="register"><a href="./register.php"><ion-icon name="person-outline"></ion-icon></a></li>
+                    <li class="login"><a href="./login_form.php"><ion-icon name="log-in-outline"></ion-icon></a></li>
+                    <li class="logout"><a href=""><ion-icon name="exit-outline"></ion-icon></a></li>
+                    <li class="cart"><a href=""><ion-icon name="bag-handle-outline"></ion-icon></a></li> -->
+                </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+
+
+<nav id="h_menu">
+    <div class="frame">
+        <ul class="left">
+            <li><a href="">BEST</a></li>
+            <li><a href="">NEW</a></li>
+            <li><a href="">SKIN CARE</a></li>
+            <li><a href="">MAKE UP</a></li>
+            <li><a href="">BODY</a></li>
+            <li><a href="">MEN</a></li>
+            <li><a href="">FOR EARTH</a></li>
+        </ul>
+        <!-- <ul class="right">
+            <li><a href="">BEST</a></li>
+            <li><a href="">SALE</a></li>
+        </ul> -->
+    </div>
+</nav>
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -1,0 +1,15 @@
+
+
+1. 회원가입
+{css}
+ - css/common.css
+ - css/register.css
+
+{js}
+ - js/register_form.js 
+
+{view 구조}
+ - header.php
+ - footer.php	
+ - register_form.php => js/register_form.js =>register_insert.php(DB에 각 입력상자의 value값을 넣는 작업을 진행)
+ - register_check_id.php(아이디 중복 체크)

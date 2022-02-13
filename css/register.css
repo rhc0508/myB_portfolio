@@ -1,0 +1,145 @@
+/* register.css */
+
+@charset "utf-8";
+#main_content{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 10px;
+    color: #333;
+}
+#main_content h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    padding-bottom: 60px;
+}
+#main_content #join_box{
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#main_content #join_box .form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0 50px;
+    height: 69px;
+}
+#main_content #join_box .form:last-child{
+    border: none;
+}
+#main_content #join_box .form .label_box{
+    width: 270px;
+}
+#main_content #join_box .form .label_box label{}
+#main_content #join_box .form .input_box{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 270px);
+    padding: 0 5px;
+}
+#main_content #join_box .form .input_box input{
+    width: calc(100% - 440px); 
+    height: 40px;
+    border: none;
+    /* background: #f1eae0; */
+    background: #eee;
+    outline: none;
+    padding: 0 15px;
+}
+#main_content #join_box .form .input_box span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#main_content #join_agreement{
+    padding: 60px 0;
+}
+#main_content #join_agreement .all{
+    width: 100%;
+    padding: 0 50px 20px;
+}
+#main_content #join_agreement .all > span{
+    display: block;
+}
+#main_content #join_agreement .all > span:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+#main_content #join_agreement .all > span:nth-child(2){
+    font-size: 14px;
+    padding-left: 38px;
+    line-height: 1.6;
+    color: #666;
+}
+#main_content #join_agreement .all > span input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+#main_content #join_agreement .all > span > label{
+    line-height: 40px;
+    margin-left: 10px;
+}
+#main_content #join_agreement .part{
+    /* background: #f1eae0; */
+    background: #eee;
+}
+#main_content #join_agreement .part > ul{}
+#main_content #join_agreement .part > ul > li{
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#main_content #join_agreement .part > ul > li:last-child{
+    border: none;
+}
+
+#main_content #join_agreement .part > ul > li > span{
+    display: block;
+    display: flex;
+    align-items: center;
+}
+#main_content #join_agreement .part > ul > li > span input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+#main_content #join_agreement .part > ul > li > span label{
+    line-height: 24px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+#main_content #join_agreement .part > ul > li > button{
+    font-size: 13px;
+    height: 24px;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+#main_content .buttons{
+    text-align: center;
+    padding: 20px 0 40px;
+}
+#main_content .buttons button{
+    height: 50px;
+    width: calc(20% - 20px);
+    margin: 0 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    background: #013328;
+    color: #fff;
+    cursor: pointer;
+}
+#main_content .buttons button:first-child{
+    background: #fff;
+    color: #333;
+}
