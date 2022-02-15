@@ -54,6 +54,18 @@
     margin-left: 10px;
 }
 
+#main_content #join_box .email_form .input_box input{
+    width: 173px;
+}
+#main_content #join_box .email_form .input_box span:first-of-type{
+    margin-left: 0;
+    display: block;
+    width: 14px;
+    text-align: center;
+}
+
+
+
 #main_content #join_agreement{
     padding: 60px 0;
 }
@@ -142,4 +154,17 @@
 #main_content .buttons button:first-child{
     background: #fff;
     color: #333;
+}
+
+.add_btn{
+    margin-left: 15px;
+}
+.add_btn button{
+   width: 100px;
+   height: 40px;
+   border: none;
+   background-color: #013328;
+   color: #fff;
+   cursor: pointer;
+   font-size: 14px;
 }

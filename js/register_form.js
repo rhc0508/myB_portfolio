@@ -34,9 +34,14 @@ $(document).ready(function(){
         }
         
         // 이메일 작성여부
-        if($("#join_form input[name='email']").val().match("@") == null){
-            $("#join_box .email_form span").text("이메일 형식이 올바르지 않습니다.").css("color", "red");
+        if($(!"#join_form input[name='email1']").val()){
+            $("#join_box .email_form span").text("이메일을 입력해주세요.").css("color", "red");
             $("#join_form input[name='email']").focus();
+            return;
+        }
+        if($(!"#join_form input[name='email2']").val()){
+            $("#join_box .email_form span").text("이메일 형식이 올바르지 않습니다.").css("color", "red");
+            $("#join_form input[name='email1']").focus();
             return;
         }
 
@@ -54,19 +59,18 @@ $(document).ready(function(){
         $("#join_form").submit();
     }
 
-    // 체크박스
-    $("#join_agreement #checkAll").click(function(){
+    // 전체 동의 체크박스
+    $("#join_agreement #checkAll").on("change", function(){
         const $checked = $(this).is(":checked");
 
         if($checked){ //전체 동의 클릭하면 전체 선택
-            $(this).closest("#join_agreement").find("input").attr("checked", true);
+            $(this).closest(".all").siblings(".part").find("input").prop("checked", true);
         }else{ //전체 동의 해제하면 전체 해제
-            $(this).closest("#join_agreement").find("input").attr("checked", false)
+            $(this).closest(".all").siblings(".part").find("input").prop("checked", false)
         }
     });
 
-
-
+    // 개별 체크박스
     function check_change(){    
         const $agree1 = $(".part input#checkAgree1").is(":checked");
         const $agree2 = $(".part input#checkAgree2").is(":checked");
@@ -78,9 +82,9 @@ $(document).ready(function(){
         if($agree1 && $agree2 && $agree3 && $agree4 && $agree5 && $agree6){
             console.log("체크");  
 
-            $("#join_agreement #checkAll").attr("checked", true);
+            $("#join_agreement #checkAll").prop("checked", true);
         }else{
-            $("#join_agreement #checkAll").attr("checked", false);
+            $("#join_agreement #checkAll").prop("checked", false);
         }
     }
 
@@ -96,9 +100,27 @@ $(document).ready(function(){
         $("#join_form input[name='pw_confirm']").val()="";
         $("#join_form input[name='name']").val()="";
         $("#join_form input[name='name']").val()="";
-        $("#join_form input[name='email']").val()=""
+        $("#join_form input[name='email1']").val()=""
+        $("#join_form input[name='email2']").val()=""
         $("#join_form input[name='id']").focus();
     }
+
+
+    const $id_val = $("#join_form input[name='id']").val();
+    function check_id(){
+        if($id_val.val() == ""){
+            $("#join_box .id_form span").text("아이디를 입력해주세요.").css("color", "red");
+
+            $("#join_form input[name='id']").focus();
+            return;
+        }
+        $("#join_box .id_form span").html("이미 사용 중인 아이디입니다.").css("color", "red");
+        $("#join_form input[name='id']").focus();
+        // window.open("./member_check_id.php?id="+document.member_form.id.value, "checkID", "width=400, height=300");
+    }
+    $(".add_btn button").click(function(){
+        check_id();
+    });
 
 
     $("button.ok").click(function(){

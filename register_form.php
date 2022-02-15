@@ -26,6 +26,9 @@
                         </div>
                         <div class="input_box">
                             <input type="text" name="id" id="userid" required>
+                            <div class="add_btn">
+                                <button type="button" >중복체크</button>
+                            </div>
                             <span></span>
                         </div>
 
@@ -69,7 +72,9 @@
                             <label for="useremail">이메일</label>
                         </div>
                         <div class="input_box">
-                            <input type="email" name="email" id="useremail" required>
+                            <input type="text" name="email1" required>
+                            <span>@</span>
+                            <input type="text" name="email2" required>
                             <span></span>
                         </div>
                     </div>
