@@ -6,21 +6,17 @@
         <div class="logo">
             <a href="./"><img src="./img/mybLogo_outline.png" alt=""></a>
         </div>
-        <div class="search">
+        <!-- <div class="search">
             <input type="text">
             <i class="fas fa-search"></i>
-        </div>
+        </div> -->
         <div class="right">
             <div class="info">
                 <ul>
-                    <li class="register"><a href="./register_form.php"><i class="fas fa-user"></i></a></li>
-                    <li class="login"><a href="./login_form.php"><i style="font-size: 24px;" class="fa-solid fa-right-to-bracket"></i></a></li>
-                    <!-- <li class="logout"><a href=""><ion-icon name="exit-outline"></ion-icon></a></li> -->
-                    <li class="cart"><a href=""><i class="fas fa-shopping-bag"></i></a></li>
-                    <!-- <li class="register"><a href="./register.php"><ion-icon name="person-outline"></ion-icon></a></li>
-                    <li class="login"><a href="./login_form.php"><ion-icon name="log-in-outline"></ion-icon></a></li>
-                    <li class="logout"><a href=""><ion-icon name="exit-outline"></ion-icon></a></li>
-                    <li class="cart"><a href=""><ion-icon name="bag-handle-outline"></ion-icon></a></li> -->
+                    <li class="login"><a href="./login_form.php"><ion-icon name="person-outline"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="search-outline"></ion-icon></a></li>
+                    <li class="cart"><a href=""><ion-icon name="bag-handle-outline"></ion-icon></a></li>
+
                 </ul>
             </div>  
         </div>

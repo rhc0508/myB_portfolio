@@ -27,7 +27,7 @@
                         <div class="input_box">
                             <input type="text" name="id" id="userid" required>
                             <div class="add_btn">
-                                <button type="button" >중복체크</button>
+                                <button type="button">중복체크</button>
                             </div>
                             <span></span>
                         </div>

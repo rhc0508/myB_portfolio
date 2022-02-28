@@ -106,17 +106,25 @@ $(document).ready(function(){
     }
 
 
-    const $id_val = $("#join_form input[name='id']").val();
     function check_id(){
-        if($id_val.val() == ""){
+        const $id_val = $("#join_form input[name='id']").val();
+        console.log($id_val);
+        if(!$id_val){
             $("#join_box .id_form span").text("아이디를 입력해주세요.").css("color", "red");
-
+        
             $("#join_form input[name='id']").focus();
             return;
         }
+        /*
         $("#join_box .id_form span").html("이미 사용 중인 아이디입니다.").css("color", "red");
         $("#join_form input[name='id']").focus();
-        // window.open("./member_check_id.php?id="+document.member_form.id.value, "checkID", "width=400, height=300");
+        */
+        window.open("./register_check_id.php?id="+$id_val, "checkID", "width=400, height=300");
+
+        /*
+        [window 팝업창]
+        window.open("오픈할 문서 파일 또는 URL(절대 URL, 상대 URL)", "오픈할 창의 타이틀", "오픈할 창의 환경 설정(가로, 세로, 위치, 스크롤바의 존재유무, 툴팁바의 존재유무, ...)")
+        */
     }
     $(".add_btn button").click(function(){
         check_id();
@@ -125,16 +133,15 @@ $(document).ready(function(){
 
     $("button.ok").click(function(){
         check_input();
-    })
+    });
     $("button.reset").click(function(){
         reset_form();
-    })
-    
+    });
 
-    
 
-    
+
 });
+
 /*
 function check_input(){
     // 아이디 작성여부

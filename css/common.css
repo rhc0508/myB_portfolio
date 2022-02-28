@@ -13,12 +13,6 @@ a{text-decoration: none;}
 
 /*** header part ***/
 
-header i{
-    font-size: 24px;
-    cursor: pointer;
-    display: block;
-}
-
 header{
     box-shadow: 0 1px 8px rgba(0,0,0,0.2);
     background-color: #fff;
@@ -40,7 +34,7 @@ header .h_top .frame .logo a img{
     display: block;
     height: 60px;
 }
-
+/* 
 header .h_top .frame .search{
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +50,7 @@ header .h_top .frame .search input{
     padding: 0 10px;
     font-size: 14px;
 }
-header .h_top .frame .search i{}
+header .h_top .frame .search i{} */
 
 
 header .h_top .frame .right{
@@ -72,21 +66,18 @@ header .h_top .frame .right .info ul{
 }
 header .h_top .frame .right .info ul li{
     height: 100%;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 header .h_top .frame .right .info ul li a{
+    display: block;
     font-size: 24px;
     color: #333;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
 }
-header .h_top .frame .right .info ul li a i{}
+
 
 
 header nav{
-    height: 70px;
+    height: 60px;
     background-color: #013328;
 }
 header nav .frame{
@@ -126,7 +117,7 @@ header nav .frame ul li a{
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 60px;
 }
 
 
@@ -156,6 +147,7 @@ footer .wrap .left .logo{
 footer .wrap .left .logo a{}
 footer .wrap .left .logo a img{
     display: block;
+    width: 50px;
     height: 50px;
     filter: grayscale(100%);
 }

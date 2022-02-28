@@ -1,5 +1,5 @@
+<!-- /* register_insert.php */ -->
 <?php
-    /* register_insert.php */
     
     $id = $_POST["id"];
     $pw = $_POST["pw"];
@@ -8,8 +8,7 @@
     $email2 = $_POST["email2"];
     $email = $email1."@".$email2;
     $regist_day = date("Y-m-d (H:i)");
-    $level = 9;
-    $point = 0;
+
 
     // var_dump($id);
     // var_dump($pw);
@@ -19,10 +18,25 @@
     
     include "./db_con.php";
 
-    // 	id	pw	name	email	level	point	
-    $sql = "insert into member (id, pw, name, email, regist_day, level, point) values('$id', '$pw', '$name', '$email', '$regist_day', 9, 0)";
+    // 기존 아이디가 존재하는 것 찾기
+    $sql = "select * from member where id='$id'";
+    $result = mysqli_query($con, $sql);
+    $num_record = mysqli_num_rows($result); 
 
-    mysqli_query($con, $sql);
+    if($num_record){
+        // DB에 동일한 아이디 존재 -> 회원가입 화면으로 다시 돌려보냄
+        echo ("
+            <script>
+                alert('동일한 아이디가 존재합니다. 다른 아이디로 변경해주세요.');
+                history.go(-1);
+            </script>
+        ");
+    }else{
+        // DB에 동일한 아이디 존재 X -> 회원가입 진행
+        // 	id	pw	name	email	level	point	
+        $sql = "insert into member (id, pw, name, email, regist_day, level, point) values('$id', '$pw', '$name', '$email', '$regist_day', 9, 0)";
+        mysqli_query($con, $sql);
+    }
     mysqli_close($con); //접속 종료
 
     echo "

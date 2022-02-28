@@ -1,0 +1,73 @@
+/* login.css */
+
+@charset "utf-8";
+#main_content{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 100px 10px;
+    color: #333;
+}
+#main_content h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    padding-bottom: 60px;
+}
+#main_content #login_box{}
+#main_content #login_box .form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* #main_content #login_box .form .label_box{
+    width: 120px;
+} */
+#main_content #login_box .form .label_box label{}
+#main_content #login_box .form .input_box{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto 10px;
+    padding: 0 10px;
+}
+#main_content #login_box .form .input_box input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    /* background: #f1eae0; */
+    background: #e3dcd270;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+#main_content .buttons{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px 40px;
+}
+#main_content .buttons button{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+#main_content .buttons button:last-child{
+    background: #fff;
+    color: #013328;
+    border: 1px solid #013328;
+}
+#main_content .buttons button:last-child:hover{
+    background-color: #e3dcd270;
+}
+#main_content .buttons button:first-child{
+    background: #013328;
+    color: #fff;
+}
+#main_content .buttons button:first-child:hover{
+    background-color: #011308;
+}

@@ -42,10 +42,10 @@
 }
 #main_content #join_box .form .input_box input{
     width: calc(100% - 440px); 
-    height: 40px;
+    height: 50px;
     border: none;
     /* background: #f1eae0; */
-    background: #eee;
+    background: #e3dcd270;
     outline: none;
     padding: 0 15px;
 }
@@ -97,7 +97,7 @@
 }
 #main_content #join_agreement .part{
     /* background: #f1eae0; */
-    background: #eee;
+    background: #e3dcd270;
 }
 #main_content #join_agreement .part > ul{}
 #main_content #join_agreement .part > ul > li{
@@ -161,7 +161,7 @@
 }
 .add_btn button{
    width: 100px;
-   height: 40px;
+   height: 50px;
    border: none;
    background-color: #013328;
    color: #fff;
